@@ -1,0 +1,52 @@
+==================================================
+  HOW TO UPDATE YOUR PORTFOLIO WEBSITE
+==================================================
+
+1. WHICH FILE TO EDIT
+--------------------------------------------------
+Always make your changes in:
+   index.html
+
+(This is the file that web browsers and GitHub Pages load.)
+
+
+2. COMMON THINGS YOU MIGHT WANT TO UPDATE
+--------------------------------------------------
+- Projects list:
+  Search for "const P=[" around line 175 to add or change projects.
+
+- Skills / Technologies:
+  Search for "const K={" around line 185 to update skill categories.
+
+- Bio & Headlines:
+  Search for "Nathaniel Darko" or "<section class="hero">" near line 115.
+
+- Profile Picture:
+  Replace the "profile.png" file in this folder with a new image using the same name.
+
+
+3. TEST YOUR CHANGES LOCALLY (OPTIONAL)
+--------------------------------------------------
+To preview your changes before publishing:
+- Double-click "index.html" to open it in your browser, OR
+- In PowerShell, run:
+    python -m http.server 8080
+  Then visit: http://localhost:8080/index.html
+
+
+4. PUBLISH YOUR CHANGES LIVE TO GITHUB
+--------------------------------------------------
+Open PowerShell or your terminal in this project folder and run these 3 commands:
+
+   git add .
+   git commit -m "Update portfolio content"
+   git push
+
+That's it! GitHub Pages will automatically update your live website within 30 to 60 seconds.
+
+
+5. IF YOU DON'T SEE CHANGES ON THE LIVE SITE IMMEDIATELY
+--------------------------------------------------
+Browsers sometimes save (cache) old files.
+If you visit your live link and don't see the update right away:
+- Press Ctrl + Shift + R (or Ctrl + F5) in your browser to force a hard refresh.
